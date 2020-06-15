@@ -6,7 +6,7 @@ TRAINDIR=$PREFIX-$LANG-from-$STARTMODEL
 
 cd ./tesseract
 
-cp -v ~/tessdata_best/tam.traineddata ../tessdata/best/$STARTMODEL.traineddata 
+### cp -v ~/tessdata_best/tam.traineddata ../tessdata/best/$STARTMODEL.traineddata 
 
 echo "-----------------------------------------------------------------------------------------------------------------"
 
