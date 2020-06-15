@@ -3,7 +3,7 @@
 lang=RajaRajanOne
 PSM=6
 cd test/
-rm  -v *ALL*$lang*.txt  *tessinput.tif
+rm  -v *ALL*$lang*.txt  *tessinput.tif *tmp.txt *accuracy.txt
 my_files=$(ls *{*.jpg,*.tif,*.png,*.jp2})
 
     for my_file in ${my_files}; do
