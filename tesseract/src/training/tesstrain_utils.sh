@@ -267,7 +267,7 @@ generate_font_image() {
     common_args+=" --char_spacing=${CHAR_SPACING} --exposure=${EXPOSURE}"
     common_args+=" --outputbase=${outbase} --max_pages=${MAX_PAGES}"
     if $DISTORT_IMAGE; then
-        common_args+=" --distort_image"
+        common_args+=" --distort_image --invert=false"
     fi
 
     # add --writing_mode=vertical-upright to common_args if the font is

@@ -25,7 +25,7 @@ FONTSDIR=../fonts
  --output_dir ../training/${PREFIX} \
  --save_box_tiff \
  --distort_image \
- --exposures   "2" \
+ --exposures   "2 3" \
  --maxpages 0 \
  --fontlist \
  "Udhayam_Rajarajan" 
@@ -53,7 +53,7 @@ FONTSDIR=../fonts
  --tessdata_dir ../tessdata \
  --output_dir ../training/${PREFIX} \
  --save_box_tiff \
- --exposures   "2" \
+ --exposures   "2 3" \
  --maxpages 0 \
  --fontlist \
  "Udhayam_Rajarajan" 
@@ -82,7 +82,7 @@ bash src/training/tesstrain.sh \
 --training_text ../langdata/$LANG/${PREFIX}.training_text \
 --tessdata_dir ../tessdata \
 --output_dir ../training/${PREFIX} \
---exposures   "2" \
+--exposures   "2 3" \
 --save_box_tiff \
 --maxpages 0 \
 --fontlist \
@@ -101,7 +101,7 @@ bash src/training/tesstrain.sh \
 --output_dir ../training/${PREFIX}-distort \
 --distort_image \
 --save_box_tiff \
---exposures   "2" \
+--exposures   "2 3" \
 --maxpages 0 \
 --fontlist \
  "Udhayam_Rajarajan" 
