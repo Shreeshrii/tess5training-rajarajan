@@ -1,6 +1,6 @@
 #!/bin/bash
 STARTMODEL=tam
-LANG=grantha
+LANG=tam
 PREFIX=layer
 TRAINDIR=$PREFIX-$LANG-from-$STARTMODEL
 
@@ -10,7 +10,7 @@ echo -e "\n***** Stop lstmtraining and convert to traineddata. \n"
 lstmtraining \
   --stop_training \
   --continue_from ../training/$TRAINDIR/${LANG}_checkpoint \
-  --append_index 5 --net_spec '[Lfx192 O1c1]' \
+  --append_index 5 --net_spec '[Lfx128 O1c1]' \
   --traineddata ../training/$LANG/$LANG.traineddata\
   --model_output  ../tessdata/finetuned/$TRAINDIR.traineddata
 
@@ -18,7 +18,7 @@ lstmtraining \
   --stop_training \
   --convert_to_int  \
   --continue_from ../training/$TRAINDIR/${LANG}_checkpoint \
-  --append_index 5 --net_spec '[Lfx192 O1c1]' \
+  --append_index 5 --net_spec '[Lfx128 O1c1]' \
   --traineddata ../training/$LANG/$LANG.traineddata\
   --model_output  ../tessdata/finetuned/$TRAINDIR-fast.traineddata
 
